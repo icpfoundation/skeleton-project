@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "skeleton": {
+      "main": "src/skeleton/main.mo",
+      "type": "motoko"
+    },
+    "skeleton_assets": {
+      "dependencies": [
+        "skeleton"
+      ],
+      "frontend": {
+        "entrypoint": "src/skeleton_assets/src/index.html"
+      },
+      "source": [
+        "src/skeleton_assets/assets",
+        "dist/skeleton_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.1",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
